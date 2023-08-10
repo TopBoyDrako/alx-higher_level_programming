@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 
 def islower(c):
-    # Check if the ASCII value of c is within the lowercase range
     return ord('a') <= ord(c) <= ord('z')
 
-print("a is {}".format("lower" if islower("a") else "upper"))
-print("H is {}".format("lower" if islower("H") else "upper"))
-print("A is {}".format("lower" if islower("A") else "upper"))
-print("3 is {}".format("lower" if islower("3") else "upper"))
-print("g is {}".format("lower" if islower("g") else "upper"))
+def check_case(c):
+    case_dict = {
+        'lower': True,
+        'upper': False
+    }
+    return case_dict['lower' if islower(c) else 'upper']
+
+# Test cases
+characters = ['a', 'H', 'A', '3', 'g']
+
+for char in characters:
+    print("{} is {}".format(char, "lower" if check_case(char) else "upper"))
+
