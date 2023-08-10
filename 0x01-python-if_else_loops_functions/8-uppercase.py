@@ -4,4 +4,7 @@
 
 def uppercase(str):
 
-    print (str.upper())
+    output = {}
+
+    output = "{}".format(str.upper())
+    print (output)
