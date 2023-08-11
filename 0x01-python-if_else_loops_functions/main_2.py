@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-add = __import__('10-add').add
+pow = __import__('11-pow').pow
 
-print(add(-100, -2))
+print(pow(10, -2))
