@@ -4,6 +4,4 @@
 
 def add(a, b):
 
-    i = a + b
-    print("{}".format(i))
-    return i
+    return a + b
