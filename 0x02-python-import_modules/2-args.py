@@ -10,6 +10,6 @@ if __name__ == "__main__":
     if argc == 0:
         print('.')
     else:
-        print(':', end='\n\n')
+        print(':', end='\n')
         for i, arg in enumerate(argv):
             print("{:d}: {}".format(i + 1, arg))
