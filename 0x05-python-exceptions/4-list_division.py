@@ -18,3 +18,9 @@ def list_division(my_list_1, my_list_2, list_length):
             result.append(0)
             print("out of range")
     return result
+        except:
+            division_result = 0
+            print("wrong type")
+        finally:
+            result.append(division_result)
+    return result
