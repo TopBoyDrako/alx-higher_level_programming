@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains a class which has a private attribute. 
+This module contains a class which has a private attribute.
 
 The private attribute must be and integer else a type error is raised.
 
@@ -16,7 +16,7 @@ class Square:
 
     def __init__(self, size=0):
         """
-        this method contains a private attribute which raises errors if 
+        this method contains a private attribute which raises errors if
         conditions are not being met
 
         Parameters:
