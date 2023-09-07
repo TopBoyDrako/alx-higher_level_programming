@@ -27,8 +27,8 @@ class Square:
         ValueError: if the private integer is less than 0
         """
         self.__size = size
-        if not str(size).isdigit():
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
 
-        if not int(size) >= 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
