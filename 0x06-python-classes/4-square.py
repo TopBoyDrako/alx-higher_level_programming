@@ -9,13 +9,13 @@ If this private attribute is less than 0, a value error is raised.
 class Square:
     """
     This class has a private attribute which must be an integer
-    and must not be less than 0 else errors will be raised for both conditions   
+    and must not be less than 0 else errors will be raised for both conditions 
     """
 
     def __init__(self, size=0):
         """
         this method contains a private attribute which raises errors if
-        conditions are not being met. It has properties which are a 
+        conditions are not being met. It has properties which are a
         getter and a setter for better control.
 
         Parameters:
@@ -33,7 +33,7 @@ class Square:
 
     @property
     def size(self):
-            return self.__size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -52,4 +52,3 @@ class Square:
         area_result = self.__size * self.__size
 
         return area_result
-
