@@ -9,7 +9,7 @@ If this private attribute is less than 0, a value error is raised.
 class Square:
     """
     This class has a private attribute which must be an integer
-    and must not be less than 0 else errors will be raised for both conditions 
+    and must not be less than 0 else errors will be raised for both conditions
     """
 
     def __init__(self, size=0):
