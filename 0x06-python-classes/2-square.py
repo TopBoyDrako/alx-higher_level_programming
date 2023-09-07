@@ -30,5 +30,5 @@ class Square:
         if not str(size).isdigit():
             raise TypeError("size must be an integer")
 
-        if not size >= 0:
+        if not int(size) >= 0:
             raise ValueError("size must be >= 0")
