@@ -10,7 +10,21 @@ class SinglyLinkedList: defines a sinly linked list
 
 class Node:
     """
-    This class has a private attribute which defines the data in it
+     A class representing a node in a singly linked list.
+
+    Attributes:
+        __data (int): The data stored in the node.
+        __next_node (Node): The next node in the linked list.
+
+    Methods:
+        data (property): Retrieve the data stored in the node.
+        data (setter): Set the data stored in the node.
+        next_node (property): Retrieve the next node in the linked list.
+        next_node (setter): Set the next node in the linked list.
+
+    Args:
+        data (int): The data to be stored in the node.
+        next_node (Node, optional): The next node in the linked list. Default is None.
     """
 
     def __init__(self, data, next_node=None):
@@ -49,7 +63,17 @@ class Node:
 
 class SinglyLinkedList:
     """
-    This class contains a private attribute
+    A class representing a singly linked list.
+
+    Attributes:
+        __head (Node): The head node of the linked list.
+
+    Methods:
+        sorted_insert(value): Inserts a new Node into the correct sorted position in the list (increasing order).
+        print_list(): Prints the entire list in stdout, one node per line.
+
+    Args:
+        None
     """
     def __init__(self):
     """
