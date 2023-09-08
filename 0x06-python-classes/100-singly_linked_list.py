@@ -40,19 +40,38 @@ class Node:
         self.__next_node = next_node
 
     @property
-    """Retrieve the data of the node."""
     def data(self):
+        """
+        Retrieve the data stored in the node.
+
+        Returns:
+            int: The data stored in the node.
+        """
         return self.__data
 
     @data.setter
-     """Set the data of the node."""
     def data(self, value):
+        """
+        Set the data stored in the node.
+
+        Args:
+            value (int): The new value for the data.
+        
+        Raises:
+            TypeError: If the value provided is not an integer.
+        """
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
+        """
+        Retrieve the next node in the linked list.
+
+        Returns:
+            Node: The next node in the linked list.
+        """
         return self.__next_node
 
     @next_node.setter
