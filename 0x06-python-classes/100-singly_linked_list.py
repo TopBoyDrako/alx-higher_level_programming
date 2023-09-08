@@ -8,7 +8,7 @@ class SinglyLinkedList: defines a sinly linked list
 """
 
 
-class Node
+class Node:
     """
     A class representing a node in a singly linked list.
 
@@ -95,6 +95,7 @@ class SinglyLinkedList:
     Args:
         None
     """
+
     def __init__(self):
     """
         Inserts a new Node into the correct sorted position in the list (increasing order).
