@@ -9,15 +9,28 @@ class SinglyLinkedList: defines a sinly linked list
 
 
 class Node:
+    """
+    This class has a private attribute which defines the data in it
+    """
+
     def __init__(self, data, next_node=None):
+         """
+        Initializes a node.
+
+        Parameters:
+            data: The data of the node.
+            next_node: The next node in the linked list. Defaults to None.
+        """
         self.__data = data
         self.__next_node = next_node
 
     @property
+    """Retrieve the data of the node."""
     def data(self):
         return self.__data
 
     @data.setter
+     """Set the data of the node."""
     def data(self, value):
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
@@ -35,7 +48,16 @@ class Node:
 
 
 class SinglyLinkedList:
+    """
+    This class contains a private attribute
+    """
     def __init__(self):
+    """
+        Inserts a new Node into the correct sorted position in the list (increasing order).
+
+        Parameters:
+            value: The value to be inserted.
+        """
         self.__head = None
 
     def sorted_insert(self, value):
