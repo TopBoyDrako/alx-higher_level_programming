@@ -97,10 +97,10 @@ class Square:
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        if not all (isinstance(x, int) x > 0 for x in value):
+        if not all (isinstance(x, int) and x > 0 for x in value):
             raise TypeError("position must be a tuple of 2 positive integers")
 
-        if position[1] > 0:
+        if value[1] > 0:
             print()
         else:
             print(" ")
