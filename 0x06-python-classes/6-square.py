@@ -51,6 +51,7 @@ class Square:
         positive integers
         """
         self.__size = size
+        self.__position = position
 
     @property
     def size(self):
