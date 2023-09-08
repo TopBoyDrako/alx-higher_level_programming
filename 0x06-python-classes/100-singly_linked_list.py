@@ -75,6 +75,15 @@ class Node:
         return self.__next_node
 
     @next_node.setter
+        """
+        Set the next node in the linked list.
+
+        Args:
+            value (Node): The next node in the linked list.
+
+        Raises:
+            TypeError: If the value provided is not a Node object.
+        """
     def next_node(self, value):
         if value is not None and not isinstance(value, Node):
             raise TypeError("next_node must be a Node object")
