@@ -9,8 +9,8 @@ class SinglyLinkedList: defines a sinly linked list
 
 
 class Node:
-    """
-     A class representing a node in a singly linked list.
+     """
+    A class representing a node in a singly linked list.
 
     Attributes:
         __data (int): The data stored in the node.
@@ -24,7 +24,8 @@ class Node:
 
     Args:
         data (int): The data to be stored in the node.
-        next_node (Node, optional): The next node in the linked list. Default is None.
+        next_node (Node, optional): The next node in the linked list.
+        Default is None.
     """
 
     def __init__(self, data, next_node=None):
