@@ -8,7 +8,7 @@ class SinglyLinkedList: defines a sinly linked list
 """
 
 
-class Node:
+class Node
     """
     A class representing a node in a singly linked list.
 
