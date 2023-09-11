@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
-This Module contains two classes
+This Module contains two classes. The first class Node defines a node of
+singly linked list, while the second class SinglyinkedList defines a singly
+linked list. They each have a private instance attribute which is defined by a
+getter and then controlled by a setter.
+This classes will both raisse different errors if certain conditions are not met
 
 @properties:
 class Node: defines a node of a singly linked list
