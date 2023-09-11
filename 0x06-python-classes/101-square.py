@@ -99,4 +99,5 @@ class Square:
                 print("#" * self.__size)
 
     def __str__(self):
+
         return "#" * self.__size + "\n" * (self.__size - 1)
