@@ -1,14 +1,22 @@
 #!/usr/bin/python3
 """
-This Module contains two classes. The first class Node defines a node of
-singly linked list, while the second class SinglyinkedList defines a singly
-linked list. They each have a private instance attribute which is defined by a
-getter and then controlled by a setter.
-This classes will both raisse different errors if certain conditions are not met
+This module contains two classes: Node and SinglyLinkedList.
 
-@properties:
-class Node: defines a node of a singly linked list
-class SinglyLinkedList: defines a sinly linked list
+Node class represents a node in a singly linked list. It has attributes for data and the next node.
+
+Attributes:
+    __data (int): The data stored in the node.
+    __next_node (Node): The next node in the linked list.
+
+Methods:
+    data (property): Retrieve the data stored in the node.
+    data (setter): Set the data stored in the node.
+    next_node (property): Retrieve the next node in the linked list.
+    next_node (setter): Set the next node in the linked list.
+
+Args:
+    data (int): The data to be stored in the node.
+    next_node (Node, optional): The next node in the linked list. Default is None
 """
 
 
