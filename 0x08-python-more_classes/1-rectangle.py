@@ -4,7 +4,7 @@ This module contains a class Rectangle which defines a rectangle.
 
 @properties:
 
-Class Rectangle: Contains two private attributes which helps to define the 
+Class Rectangle: Contains two private attributes which helps to define the
 rectangle
 
 @Attributes:
@@ -17,7 +17,7 @@ Height(__init__): This sets the height of the rectangle
 class Rectangle:
     """
     This class contains two private attributes which have decorators used
-    to get the attributes outside the class. 
+    to get the attributes outside the class.
 
     An error is raised if conditions set by the setter decorator isn't met
     for both private attributes.
@@ -49,7 +49,6 @@ class Rectangle:
         self.__height = value
 
         if not isinstance(value, int):
-            raise TypeError("height mut be an integer")
-
+            raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
