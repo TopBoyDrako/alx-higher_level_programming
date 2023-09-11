@@ -99,5 +99,11 @@ class Square:
                 print("#" * self.__size)
 
     def __str__(self):
+        if self.__size == 0:
+            return ""
 
-        return "#" * self.__size + "\n" * (self.__size - 1)
+        square_pattern = "#" * self.__size + "\n"
+        square_pattern *= self.__size - 1
+        square_pattern += "#" * self.__size
+
+        return square_pattern
