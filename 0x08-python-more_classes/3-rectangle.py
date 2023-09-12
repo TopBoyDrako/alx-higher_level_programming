@@ -4,7 +4,7 @@ This module contains a class Rectangle which defines a rectangle.
 
 @properties:
 
-Class Rectangle: Contains two private attributes which helps to define       
+Class Rectangle: Contains two private attributes which helps to define
 the rectangle
 
 @Class Attributes:
@@ -21,13 +21,13 @@ Height(__init__): This sets the height of the rectangle
 
 class Rectangle:
     """
-    This class contains two private attributes which have decorators used    
+    This class contains two private attributes which have decorators used
     to get the attributes outside the class.
 
     This class also contains two public attributes which returns the
     Area and Perimeter of the rectangle respectively
 
-    An error is raised if conditions set by the setter decorator isnt met    
+    An error is raised if conditions set by the setter decorator isnt met
     for both private attributes.
     """
     def __init__(self, width=0, height=0):
