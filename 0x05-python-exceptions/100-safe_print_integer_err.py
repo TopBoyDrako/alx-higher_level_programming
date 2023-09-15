@@ -3,7 +3,7 @@
 def safe_print_integer_err(value):
     try: 
         if not isinstance(value, int):
-            raise TypeError("Value is not an integer")
+            raise TypeError
         print("{:d}".format(value))
         return True
     except ValueError as ve:
