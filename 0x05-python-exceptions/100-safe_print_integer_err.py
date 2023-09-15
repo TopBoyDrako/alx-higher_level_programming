@@ -1,15 +1,9 @@
 #!/usr/bin/python3
 
 def safe_print_integer_err(value):
-    try: 
-        if not isinstance(value, int):
-            raise TypeError
+    try:
         print("{:d}".format(value))
         return True
-    except ValueError as ve:
-        print("Exception: {}".format(ve))
+    except (ValueError, TypeError) as e:
+        print("Exception: {}".format(e))
         return False
-    except TypeError as te:
-        print("Exception: {}".format(te))
-        return False
-
