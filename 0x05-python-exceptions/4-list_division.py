@@ -11,7 +11,7 @@ def list_division(my_list_1, my_list_2, list_length):
             element_2 = my_list_2[i]
 
             if not (isinstance(element_1, (int, float)) and isinstance(
-                element_2, (int, float))):
+                    element_2, (int, float))):
                 raise TypeError("wrong type")
 
             if element_2 == 0:
