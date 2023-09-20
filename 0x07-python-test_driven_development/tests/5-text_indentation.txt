@@ -1,0 +1,7 @@
+>>> from text_formatting import text_indentation
+>>> text_indentation("This is a sample text. It has some punctuations: like ., ? and :")
+This is a sample text.
+
+It has some punctuations:
+
+
