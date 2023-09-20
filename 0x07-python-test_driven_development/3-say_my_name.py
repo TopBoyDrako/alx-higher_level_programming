@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module contains a function which prints My name 
+This module contains a function which prints My name
 
 The first and Last names must be strings else a TypeError is raised
 """
