@@ -3,6 +3,7 @@
 This module contains a function  t prints a square with the character #
 """  
 
+
 def print_square(size):
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
@@ -13,4 +14,3 @@ def print_square(size):
 
     for _ in range(size):
         print("#" * size)
-
