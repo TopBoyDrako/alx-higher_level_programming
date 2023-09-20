@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 """
-This module contains a function  t prints a square with the character #
-"""  
+This module contains a function that prints a square with the character #
+"""
 
 
 def print_square(size):
+    """
+     This method prints a square with the # character
+    """
+
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
     if size < 0:
