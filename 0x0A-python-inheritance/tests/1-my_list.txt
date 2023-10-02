@@ -1,30 +1,28 @@
-Test for 1-my_list.py module
+# Test case 1
+>>> from 1-my_list import MyList
 
-1. Create an instance of MyList:
-   my_list = MyList()
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-2. Append some elements to the list:
-   my_list.append(1)
-   my_list.append(4)
-   my_list.append(2)
-   my_list.append(3)
-   my_list.append(5)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
 
-3. Print the list:
-   print(my_list)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
 
-Expected Output:
-   [1, 4, 2, 3, 5]
+# Test case 2 (Empty list)
+>>> my_empty_list = MyList()
+>>> my_empty_list.print_sorted()
+[]
 
-4. Call the print_sorted() method:
-   my_list.print_sorted()
-
-Expected Output:
-   [1, 2, 3, 4, 5]
-
-5. Verify that the original list is unchanged:
-   print(my_list)
-
-Expected Output:
-   [1, 4, 2, 3, 5]
+# Test case 3 (Already sorted list)
+>>> my_sorted_list = MyList([1, 2, 3, 4, 5])
+>>> my_sorted_list.print_sorted()
+[1, 2, 3, 4, 5]
 
