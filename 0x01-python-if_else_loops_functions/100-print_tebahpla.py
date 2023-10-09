@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-# function that prints alphabets in reverse
-
-for i in range(122, 64, -1):
-    char1 = chr(i)       # Lowercase letter
-    char2 = chr(i - 32)  # Uppercase letter
+for i in range(122, 96, -2):
+    char1 = chr(i)
+    char2 = chr(i-33).upper()
     print("{}{}".format(char1, char2), end="")
