@@ -19,29 +19,44 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
+        """
+        Defines the private properties of the rectangle.
+        width and height are made private with the use of double
+        underscores before the name
+        """
         self.__width = width
         self.__height = height
 
     @property
     def width(self):
+        """This returns the width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        self.__width = value
+        """
+        The setter sets the width to make sure it's an
+        integer
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
+        """This returns the height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        self.__height = value
+        """
+        The setter sets the height to make sure it is an
+        integer
+        """
         if not isinstance(value, int):
-            raise TypeError("width must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("width must be >= 0")
+            raise ValueError("height must be >= 0")
+        self.__height = value
