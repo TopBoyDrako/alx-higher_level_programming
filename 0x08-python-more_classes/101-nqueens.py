@@ -5,8 +5,8 @@ import sys
 
 def is_safe(board, row, col, n):
     for i in range(row):
-        if board[i] == col or board[i] - i == col - row or board
-        [i] + i == col + row:
+        if board[i] == col or board[i
+        ] - i == col - row or board[i] + i == col + row:
             return False
     return True
 
@@ -30,8 +30,7 @@ def solve_n_queens(n):
 
 
 def print_solution(solution):
-    for row in solution:
-        print(row)
+    print("[" + ', '.join([str(pos) for pos in solution]) + "]")
 
 
 if __name__ == "__main__":
