@@ -95,7 +95,7 @@ class Rectangle:
             rectangle_str = ""
             for i in range(self.__height):
                 rectangle_str += "#" * self.__width + "\n"
-            return rectangle_str
+            return rectangle_str.rstrip("\n")
 
     def str(retangle):
         """returns the string format of the rectangle"""
