@@ -2,11 +2,14 @@
 
 import sys
 
+
 def is_safe(board, row, col, n):
     for i in range(row):
-        if board[i] == col or board[i] - i == col - row or board[i] + i == col + row:
+        if board[i] == col or board[i] - i == col - row or board
+        [i] + i == col + row:
             return False
     return True
+
 
 def solve_n_queens_util(n, row, board, solutions):
     if row == n:
@@ -18,15 +21,18 @@ def solve_n_queens_util(n, row, board, solutions):
             board[row] = col
             solve_n_queens_util(n, row + 1, board, solutions)
 
+
 def solve_n_queens(n):
     solutions = []
     board = [-1] * n
     solve_n_queens_util(n, 0, board, solutions)
     return solutions
 
+
 def print_solution(solution):
     for row in solution:
         print(row)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
