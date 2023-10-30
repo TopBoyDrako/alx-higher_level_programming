@@ -24,8 +24,8 @@ class Rectangle:
         width and height are made private with the use of double
         underscores before the name
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
