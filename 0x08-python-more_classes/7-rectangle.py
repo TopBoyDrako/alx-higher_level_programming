@@ -98,7 +98,7 @@ class Rectangle:
         else:
             rectangle_str = ""
             for i in range(self.__height):
-                rectangle_str += "".join(self.print_symbol) * self.__width + "\n"
+                rectangle_str += str(self.print_symbol) * self.__width + "\n"
             return rectangle_str.rstrip("\n")
 
     def str(retangle):
