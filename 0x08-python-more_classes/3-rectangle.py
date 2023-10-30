@@ -94,9 +94,9 @@ class Rectangle:
                 rectangle_str += "#" * self.__width + "\n"
             return rectangle_str
 
-    def str(self):
+    def str(retangle):
         return self.__str__()
 
-    def print(self):
+    def print(rectangle):
         print(rectangle.__str__())
                
