@@ -14,6 +14,9 @@ getting and alsosetting this attributes
 Public Ibject Attributes:
 def area(self): Returns the area of the rectangle
 def perimeter(self): returns the perimeter
+
+__str__ ensures that the rectangle is printed out with the #
+character and also in a user friendly mode.
 """
 
 
@@ -95,7 +98,9 @@ class Rectangle:
             return rectangle_str
 
     def str(retangle):
+        """returns the string format of the rectangle"""
         return self.__str__()
 
     def print(rectangle):
+        """prints out the rectangle using the # character"""
         print(rectangle.__str__())
