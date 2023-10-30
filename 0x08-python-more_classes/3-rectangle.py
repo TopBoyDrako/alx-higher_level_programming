@@ -99,4 +99,3 @@ class Rectangle:
 
     def print(rectangle):
         print(rectangle.__str__())
-               
