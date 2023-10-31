@@ -8,10 +8,4 @@ first_name
 
 
 class LockedClass:
-    """
-    This calss defines a locked class
-    """
-    def __setattr__(self, name, value):
-        if name != 'first_name':
-            raise AttributeError(f'Cannot set attribute {name}. Only first_name is allowed.')
-        super().__setattr__(name, value)
+    __slots__ = ('first_name',)
