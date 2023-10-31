@@ -1,1 +1,1 @@
-Before the execution of line 2 (print("Love")), no new integer objects have been created and are still in memory. This is because CPython optimizes small integers by pre-allocating them in a pool (-5 to 256), so they are reused instead of creating new objects.
+NSMALLPOSINTS, NSMALLNEGINTS
