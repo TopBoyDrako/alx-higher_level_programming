@@ -1,6 +1,15 @@
 #!/usr/bin/python3
+"""
+This module contains a function which returns the addition of 2 numbers
+"""
+
 
 def add_integer(a, b=98):
+    """
+    This is an add function thatt returns the sum of two
+    integers. It raises an error if this numbers are not an
+    integer or float
+    """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
