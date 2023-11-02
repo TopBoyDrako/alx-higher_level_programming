@@ -1,89 +1,56 @@
->>> matrix_divided = __import__('2-matrix_divided').matrix_divided
->>> matrixa = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
->>> matrixb = [[1,2,3], [4,5,6]]
->>> none = None
->>> empty_list = []
->>> empty_lists = [[],[],[]]
->>> matrixc = [[1,2,3], [4,"b",6]]
->>> not_list = [1, [1,2,3]]
->>> diff_len = [[1,2,3], [4,5]]
->>> matrix_divided(matrixa, 2)
-[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
->>> matrix_divided(matrixb, 3)
-[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
->>> matrix_divided(matrixb, 0)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 32, in matrix_divided
-    raise ZeroDivisionError("division by zero")
-ZeroDivisionError: division by zero
->>> matrix_divided(matrixb, -1)
-[[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
->>> matrix_divided(matrixa, "s")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 28, in matrix_divided
-    raise TypeError("div must be a number")
-TypeError: div must be a number
->>> matrix_divided(matrixa)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: matrix_divided() missing 1 required positional argument: 'div'    
->>> matrix_divided(matrixc, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 23, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(not_list, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 20, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(none, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 15, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(empty_list, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 15, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(empty_lists, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 26, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(diff_len, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 30, in matrix_divided
-    raise TypeError("Each row of the matrix must have the same size")        
-TypeError: Each row of the matrix must have the same size
->>> matrix_divided(5, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 17, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided("f", 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 17, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> matrix_divided(matrixa, 3.54)
-[[0.28, 0.56, 0.85], [1.13, 1.41, 1.69], [1.98, 2.26, 2.54]]
->>> matrix_divided(matrixb, -3.54)
-[[-0.28, -0.56, -0.85], [-1.13, -1.41, -1.69]]
->>> matrix_divided(0, -3.54)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 15, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats
+Using ``matrix_divided``
+-----------------------
+
+Checks if all matrix items are ints or floats
+Checks if length of lists in matrix are same
+Checks if div is a float or int or 0
+Divides all items in matrix by div
+Returns a new matrix
+
+First import ``matrix_divided``
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Now use it:
+
+Basic usage:
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> print(matrix_divided(matrix, 3))
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Non int/float inputs in lists of matrix:
+    >>> matrix = [['h', 'o', 'l'], ['b', 5, 6]]
+    >>> print(matrix_divided(matrix, 5))
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Zero "div" input:
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> print(matrix_divided(matrix, 0))
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
+
+Different list length in matrix input:
+    >>> matrix = [[1, 2, 3], [4, 5]]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
+
+Negative variables in list inputs:
+    >>> matrix = [[1, 2, -3], [4, 5, -6]]
+    >>> print(matrix_divided(matrix, 2))
+    [[0.5, 1.0, -1.5], [2.0, 2.5, -3.0]]
+
+Empty matrix input:
+    >>> matrix = [[]]
+    >>> print(matrix_divided(matrix, 2))
+    [[]]
+
+No input:
+    >>> print(matrix_divided())
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
