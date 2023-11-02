@@ -7,6 +7,9 @@ are not met.
 
 
 def matrix_divided(matrix, div):
+    """
+    This function is divides through a matrix with a given divisor
+    """
     error = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(error)
