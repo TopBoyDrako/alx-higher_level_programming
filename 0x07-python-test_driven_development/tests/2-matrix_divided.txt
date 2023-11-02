@@ -66,5 +66,4 @@ TypeError: div must be a number
 >>> matrix_divided(matrixb, 45.722, 4)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: matrix_divided() takes 2 positional arguments but 3 were given    
->>>
+TypeError: matrix_divided() takes 2 positional arguments but 3 were given
