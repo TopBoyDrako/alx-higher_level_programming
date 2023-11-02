@@ -6,6 +6,10 @@ This module defines a function that prints a persons fullname
 
 
 def say_my_name(first_name, last_name=""):
+    """
+    This function prints a persons full name and raises errors if
+    specific conditions are not met
+    """
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
