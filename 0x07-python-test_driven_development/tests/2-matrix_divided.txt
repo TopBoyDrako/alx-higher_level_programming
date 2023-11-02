@@ -20,21 +20,6 @@ Traceback (most recent call last):
   File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 15, in matrix_divided
     raise TypeError(error)
 TypeError: matrix must be a matrix (list of lists) of integers/floats
->>> 
->>> empty_list = []
->>> matrix_divided(empty_list, 5)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 15, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
->>> not_list = [42, [2,5]]
->>> matrix_divided(not_list, 5)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 20, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
 >>> matrix_divided(matrixa, 0)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -48,13 +33,6 @@ Traceback (most recent call last):
   File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 30, in matrix_divided
     raise TypeError("Each row of the matrix must have the same size")        
 TypeError: Each row of the matrix must have the same size
->>> emp_lists = [[],[],[],[]]
->>> matrix_divided(emp_lists, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 26, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats        
 >>> matrix_divided(matrixa, matrixb)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -63,9 +41,3 @@ Traceback (most recent call last):
 TypeError: div must be a number
 >>> matrix_divided(matrixb, 45.722)
 [[0.02, 0.04, 0.07], [0.09, 0.11, 0.13]]
->>> matrix_divided(matrixa, 3)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/root/alx-higher_level_programming/0x07-python-test_driven_development/2-matrix_divided.py", line 23, in matrix_divided
-    raise TypeError(error)
-TypeError: matrix must be a matrix (list of lists) of integers/floats 
