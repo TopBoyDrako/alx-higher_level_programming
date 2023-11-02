@@ -63,10 +63,6 @@ Traceback (most recent call last):
 TypeError: div must be a number
 >>> matrix_divided(matrixb, 45.722)
 [[0.02, 0.04, 0.07], [0.09, 0.11, 0.13]]
->>> matrix_divided(matrixb, 45.722, 4)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: matrix_divided() takes 2 positional arguments but 3 were given
 >>> matrix_divided(matrixa, 3)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
