@@ -3,13 +3,14 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 """
-This module defines a class that inherits another class
+This module defines a class that inherits another class.
+It defines a rectangle
 """
 
 
 class Rectangle(BaseGeometry):
     """
-    This class is a subclass of BaseGeometry. 
+    This class is a subclass of BaseGeometry. It defines a rectangle
     """
 
     def __init__(self, width, height):
