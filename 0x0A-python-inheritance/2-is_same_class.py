@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-This module defines a function that returns True for an instance of a 
+This module defines a function that returns True for an instance of a
 specidfied class or False if other wise
 """
 
