@@ -10,7 +10,9 @@ using a method from the parent class.
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
+
     """
     This class is a subclass of BaseGeometry. It defines a rectangle
     It has an __init__ method used to instantiate the width and height of
