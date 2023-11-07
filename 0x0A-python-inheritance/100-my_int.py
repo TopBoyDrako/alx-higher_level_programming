@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-This module contains a subclass inheriting from attributes and methods
-from it's parent class
+This module contains a subclass inheriting attributes and methods
+in it's parent class.
 """
 
 
