@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-Rectangle = __import__('9-rectangle').Rectangle
 
 """
 This module inherits from a subclass Rectangle. It defines a
@@ -7,7 +6,11 @@ new class Square which has functions implemented
 """
 
 
+Rectangle = __import__('9-rectangle').Rectangle
+
+
 class Square(Rectangle):
+
     """
     This class defines the square shape with private attributes
     """
