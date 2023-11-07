@@ -6,7 +6,6 @@ in it's parent class.
 """
 
 
-
 class MyInt(int):
 
     """
