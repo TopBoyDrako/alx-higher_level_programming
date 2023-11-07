@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-
-#!/usr/bin/python3
-
 """
 This module defines a class Rectangle as a subclass that inherits
 the properties of its parent class BaseGeometry.
