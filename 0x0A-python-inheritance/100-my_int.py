@@ -7,6 +7,7 @@ from it's parent class
 
 
 class MyInt(int):
+
     """
     This class is a rebel. It has the operators == and != inverted
     """
