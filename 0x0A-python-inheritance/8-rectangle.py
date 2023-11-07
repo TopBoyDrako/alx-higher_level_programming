@@ -3,8 +3,10 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 """
-This module defines a class that inherits another class.
-It defines a rectangle with widthe and height
+This module defines a class Rectangle as a subclass that inherits
+ the properties of its parent class (BaseGeometry).
+It defines a rectangle with width and height which are validated
+using a method from the prent class
 """
 
 
@@ -23,4 +25,3 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
-
