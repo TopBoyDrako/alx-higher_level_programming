@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 from models.base import Base
+
 """
 This module defines a subclass Rectangle that inherits from Base
 the superclass. It contains 4 different private attributes used to
@@ -80,3 +81,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """This defines the area of the rectangle"""
+        return self.__width * self.__height
