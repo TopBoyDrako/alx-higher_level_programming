@@ -10,6 +10,11 @@ define the rectangle shape
 class Rectangle(Base):
     """
     This class defines a rectangle with 4 private attributes
+    @property
+    self.__width
+    self.__height
+    self.__x
+    self.__y
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -22,10 +27,11 @@ class Rectangle(Base):
 
     @property
     def width(self):
-            return self.__width
+        return self.__width
+
     @width.setter
     def width(self, value):
-        if not isinstance (value, int):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("Width must be >= 0")
