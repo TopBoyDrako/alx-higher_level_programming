@@ -5,6 +5,25 @@ from models.base import Base
 This module defines a subclass Rectangle that inherits from Base
 the superclass. It contains 4 different private attributes used to
 define the rectangle shape
+
+private attributes are:
+__width
+__height
+__x
+__y
+
+The __init__ function initalizes the private attribute and calls the parent
+class using the super() function
+
+The private attributes are validated using getters and setter method for
+each of them.
+
+def area() - This returns the area of the rectangle
+def display() - This displays the rectangle using the # character
+__str__ - this method formats the string representation of the rectangle
+def update() - here we use *args to assign an argument to each attribute.
+The update method is later updated to also use **kwargs in assinging a key
+and value to the attributes
 """
 
 
@@ -100,3 +119,7 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".\
             format(type(self).__name__, self.id, self.x, self.y, self.width,
                    self.height)
+
+    def update(self, *args):
+        """this function assigns an argument to each attribute"""
+        
