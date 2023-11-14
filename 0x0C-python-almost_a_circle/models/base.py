@@ -4,6 +4,7 @@
 This module defines a class with a private and public attribute each
 @private attribute = __nb_objects
 @public attribute = id
+
 """
 
 
