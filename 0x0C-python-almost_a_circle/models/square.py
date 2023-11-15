@@ -47,3 +47,12 @@ class Square(Rectangle):
             self.size = kwargs.get('size', getattr(self, 'size', None))
             self.x = kwargs.get('x', getattr(self, 'x', None))
             self.y = kwargs.get('y', getattr(self, 'y', None))
+
+    def to_dictionary(self):
+        """returns a dictionary representation of a Rectangle"""
+        return {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+        }
