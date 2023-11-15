@@ -15,22 +15,27 @@ class Square(Rectangle):
     """
 
     def __init__(self, size, x=0, y=0, id=None):
+        """initializes the atributes"""
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
+        """this str methid returns a str and print method for the square"""
         return '[{}] ({}) {}/{} - {}'. \
             format(type(self).__name__, self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
+        """getter method for the size of the square"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """setter method for the size of the square"""
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
+        """This method assisngs attributes to each of the arguments"""
         if args:
             self.id = args[0] if len(args) > 0 else getattr(self, 'id', None)
             self.size = args[1] if len(args) > 1 else getattr(self, 'size', None)
