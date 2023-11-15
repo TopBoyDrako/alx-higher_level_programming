@@ -8,6 +8,10 @@ This module defines a class with a private and public attribute each
 """
 
 
+from json import dumps, loads
+import csv
+
+
 class Base:
     """
     This class defines a function which manages a public attribute "id"
@@ -23,3 +27,10 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """returns the json string reprsentation of list_dictionaries"""
+        if list_dictionaries is None or not list_dictionaries:
+            return "[]"
+        return dumps(list_dictionaries)
