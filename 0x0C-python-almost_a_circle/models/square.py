@@ -29,3 +29,15 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        if args:
+            self.id = args[0] if len(args) > 0 else getattr(self, 'id', None)
+            self.size = args[1] if len(args) > 1 else getattr(self, 'size', None)
+            self.x = args[2] if len(args) > 2 else getattr(self, 'x', None)
+            self.y = args[3] if len(args) > 3 else getattr(self, 'y', None)
+        elif kwargs:
+            self.id = kwargs.get('id', getattr(self, 'id', None))
+            self.size = kwargs.get('size', getattr(self, 'size', None))
+            self.x = kwargs.get('x', getattr(self, 'x', None))
+            self.y = kwargs.get('y', getattr(self, 'y', None))
