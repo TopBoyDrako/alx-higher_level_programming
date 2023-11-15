@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from models.base import Base
 
 """
 This module defines a subclass Rectangle that inherits from Base
@@ -25,6 +24,9 @@ def update() - here we use *args to assign an argument to each attribute.
 The update method is later updated to also use **kwargs in assinging a key
 and value to the attributes
 """
+
+
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -121,5 +123,4 @@ class Rectangle(Base):
                    self.height)
 
     def update(self, *args):
-        """this function assigns an argument to each attribute"""
-        
+        """this function assigns an argument to each attribute"""        
