@@ -75,3 +75,37 @@ class Base:
                 return [cls.create(**d) for d in list_of_dicts]
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes a list of objects to a CSV file."""
+        filename = "{}.csv".format(cls.__name__)
+        with open(
+                    filename, mode="w", newline="", encoding="utf-8"
+                    ) as csv_file:
+            csv_writer = csv.writer(csv_file)
+            for obj in list_objs:
+                csv_writer.writerow([getattr(obj, attr)
+                                    for attr in cls.attributes()])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes a list of objects from a CSV file."""
+        filename = "{}.csv".format(cls.__name__)
+        try:
+            with open(filename, mode="r", encoding="utf-8") as csv_file:
+                csv_reader = csv.reader(csv_file)
+                return [cls.create(**dict(zip(cls.attributes(),
+                        map(int, row)))) for row in csv_reader]
+        except FileNotFoundError:
+            return []
+
+    @classmethod
+    def attributes(cls):
+        """Returns a list of attribute names for CSV serialization."""
+        if cls.__name__ == "Rectangle":
+            return ["id", "width", "height", "x", "y"]
+        elif cls.__name__ == "Square":
+            return ["id", "size", "x", "y"]
+        else:
+            return []
