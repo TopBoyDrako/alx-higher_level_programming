@@ -20,3 +20,12 @@ class Square(Rectangle):
     def __str__(self):
         return '[{}] ({}) {}/{} - {}'. \
             format(type(self).__name__, self.id, self.x, self.y, self.width)
+
+    @property
+    def size(self):
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        self.width = value
+        self.height = value
