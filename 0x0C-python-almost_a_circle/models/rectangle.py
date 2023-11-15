@@ -123,4 +123,4 @@ class Rectangle(Base):
                    self.height)
 
     def update(self, *args):
-        """this function assigns an argument to each attribute"""        
+        """this function assigns an argument to each attribute"""
