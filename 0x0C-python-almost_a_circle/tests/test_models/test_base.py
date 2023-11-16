@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""This module defines a test for the class Base"""
+"""
+This module defines unittests for base.py.
+"""
+
+
 import os
 import unittest
 from models.base import Base

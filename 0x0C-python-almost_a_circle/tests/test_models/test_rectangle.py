@@ -1,16 +1,15 @@
 #!/usr/bin/python3
-"""This module describes unit tests for the class Rectangle"""
+"""Defines unittests for models/rectangle.py.
+    TestRectangle_to_dictionary - line 788
+"""
+import io
+import sys
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
-import io
-import sys
 
 
-class TestRectangle(unittest.TestCase):
-    """Test the base class"""
-
-    class TestRectangle_instantiation(unittest.TestCase):
+class TestRectangle_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Rectangle class."""
 
     def test_rectangle_is_base(self):
