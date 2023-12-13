@@ -14,17 +14,17 @@ VALUES (
     1,
     'John',
     3
-)
+);
 VALUES (
     2,
     'Alex',
     3
-)
+);
 VALUES (
     3,
     'Bob',
     14
-)
+);
 VALUES (
     4,
     'George',
