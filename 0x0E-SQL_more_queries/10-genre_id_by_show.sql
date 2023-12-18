@@ -1,7 +1,7 @@
 -- This script imports a database
 
-SELECT show.title, genre.genre_id
-  FROM tv_shows AS show
+SELECT tvshow.title, genre.genre_id
+  FROM tv_shows AS tvshow
     INNER JOIN tv_show_genres AS genre
-    ON show.id = genre.show_id
-  ORDER BY show.title, genre.genre_id;
+    ON tvshow.id = genre.show_id
+  ORDER BY tvshow.title, genre.genre_id;
