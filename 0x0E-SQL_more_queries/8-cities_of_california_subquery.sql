@@ -1,6 +1,10 @@
 -- This script lists all cities of a state in the database
 
-SELECT cities
-FROM states
-WHERE name = California
-ORDER BY cities.id ASC;
+SELECT id, name
+FROM cities
+WHERE state_id IN (
+    SELECT id
+    FROM states
+    WHERE name = California
+)
+ORDER BY id ASC;
