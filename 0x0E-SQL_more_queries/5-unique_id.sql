@@ -1,6 +1,6 @@
 -- This script creates a unique_id
 
 CREATE TABLE IF NOT EXISTS unique_id (
-    id INT AUTO_INCREMENT PRIMARY KEY DEFAULT 1,
+    id INT DEFAULT 1 UNIQUE,
     name VARCHAR(256)
 )
