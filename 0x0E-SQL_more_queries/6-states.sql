@@ -1,0 +1,7 @@
+-- This scrip creates a database and table
+
+CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+CREATE TABLE IF NOT EXISTS states (
+    id INT AUTO_INCREMENT PRIMARY KEY DEFAULT 1 UNIQUE NOT NULL,
+    VARCHAR (256) NOT NULL
+);
