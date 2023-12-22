@@ -1,4 +1,4 @@
---This script lists all shows by their rating.
+-- This script lists all shows by their rating
 
 SELECT title, SUM(`rate`) AS rates
 FROM tv_shows AS tv
