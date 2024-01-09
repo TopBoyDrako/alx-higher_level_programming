@@ -6,6 +6,6 @@ if (isNaN(square)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < square; i++) {
-  console.log('X'.repeat(square))
- }
+    console.log('X'.repeat(square));
+  }
 }
