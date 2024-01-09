@@ -1,13 +1,13 @@
 #!/usr/bin/node
 
-const script = 'C is fun';
-let i = 0;
+const script = parseInt(process.argv[2]);
 
-if (isNaN(process.argv[2])) {
+if (isNaN(script)) {
   console.log('Missing number of occurences');
 } else {
-  while (i < parseInt(process.argv[2])) {
-    console.log(script[i]);
+  let i = 0;
+  while (i < script) {
+    console.log('C is fun');
     i++;
   }
 }
