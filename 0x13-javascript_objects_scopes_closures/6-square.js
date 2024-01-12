@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 
 module.exports = class Squaure extends require('./5-square.js') {
   charPrint (c) {
