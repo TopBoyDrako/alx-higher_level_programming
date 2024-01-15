@@ -3,8 +3,6 @@
 This script takes in an argument and displays all it's values
 in the states table
 """
-
-
 import MySQLdb
 from sys import argv
 
