@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """
 This script takes in an argument and displays all it's values
-in the states table
+in the states table where name matches the argument
 """
+
+
 import MySQLdb
 from sys import argv
 
