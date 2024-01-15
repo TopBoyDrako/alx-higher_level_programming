@@ -20,8 +20,10 @@ if __name__ == "__main__":
                     WHERE states.name = %s", [argv[4]])
 
     rows = cursor.fetchall()
+    p = []
     for i in rows:
-        print(i)
+        p.append(i[1])
+    print(", ".join(p))
 
     cursor.close()
     db.close()
