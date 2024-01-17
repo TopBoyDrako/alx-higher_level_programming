@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+This script lists all states objects from the database
 """
 from sys import argv
 from sqlalchemy import create_engine
