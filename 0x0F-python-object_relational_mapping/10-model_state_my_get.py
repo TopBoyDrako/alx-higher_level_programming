@@ -11,10 +11,15 @@ from sys import argv
 
 if __name__ == "__main__":
     if len(argv) != 5:
-        print("Usage: {} <username> <password> <database> <state name>".format(argv[0]))
+        print("Usage: {} < username > < password > < database >
+              < state name >".format(argv[0])
+              )
         exit(1)
 
-    username, password, db_name, state_name = argv[1], argv[2], argv[3], argv[4]
+    username = argv[1]
+    password = argv[2]
+    db_name = argv[3]
+    state_name = argv[4]
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'
                            .format(username, password, db_name),
                            pool_pre_ping=True)
