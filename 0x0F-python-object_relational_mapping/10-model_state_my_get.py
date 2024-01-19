@@ -2,6 +2,7 @@
 """
 Script that prints the State object with the name passed as
 argument from the database hbtn_0e_6_usa
+It takes 4 arguments
 """
 
 
