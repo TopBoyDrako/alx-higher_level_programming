@@ -12,8 +12,7 @@ from sys import argv
 if __name__ == "__main__":
     if len(argv) != 5:
         print("Usage: {} < username > < password > < database >
-              < state name >".format(argv[0])
-              )
+              < state name >".format(argv[0]))
         exit(1)
 
     username = argv[1]
