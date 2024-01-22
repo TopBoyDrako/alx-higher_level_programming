@@ -4,6 +4,7 @@ This module is a script that creates he state Cali with the city
 San Francisco from the database
 """
 
+
 if __name__ == "__main__":
 
     import sys
