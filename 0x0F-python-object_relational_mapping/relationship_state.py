@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+"""
+This is a module that contains a class State which inherits froM
+a class Base
+"""
+
 from sqlalchemy import Column, Integer, String, text
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
-"""
-This module creates a States class based off of Base.
-"""
 
 Base = declarative_base()
 
