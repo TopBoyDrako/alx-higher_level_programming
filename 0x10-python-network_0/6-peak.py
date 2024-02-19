@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This module contains a function that finds the highest(s)
+integers in an unsorted list with a certain complexity
+"""
 
 
 def find_peak(list_of_integers):
