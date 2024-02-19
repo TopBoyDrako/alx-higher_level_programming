@@ -6,6 +6,9 @@ integers in an unsorted list with a certain complexity
 
 
 def find_peak(list_of_integers):
+    """ Function to sort through an unsorted list
+        and find the max(s)
+    """
 
     if list_of_integers is None or len(list_of_integers) == 0:
         return None
